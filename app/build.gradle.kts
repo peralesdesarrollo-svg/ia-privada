@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("org.jetbrains.kotlin.plugin.compose")
+    id("org.jetbrains.kotlin.plugin.compose") version "1.5.0"
 }
 android {
     namespace = "com.tuempresa.videogenerator"
@@ -15,6 +15,9 @@ android {
     }
     buildFeatures { compose = true }
     composeOptions { kotlinCompilerExtensionVersion = "1.5.0" }
+    aaptOptions {
+        path = "/data/data/com.termux/files/home/.aapt2-aarch64/aapt2"
+    }
 }
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")

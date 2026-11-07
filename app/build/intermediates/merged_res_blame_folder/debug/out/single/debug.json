@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.tuempresa.videogenerator.app-merged_res-47:/xml_network_security_config.xml.flat",
+        "source": "com.tuempresa.videogenerator.app-main-49:/xml/network_security_config.xml"
+    }
+]
